@@ -114,8 +114,8 @@ This will create the virtual environment. Leave the terminal window active for s
 
 - [ ] Open GitHub Copilot in Visual Studio Code.
   
-  [!CAUTION]
-  > You may have to signin using an account with copilot capabilities.
+ > [!CAUTION]
+ > You may have to signin using an account with copilot capabilities.
 
 - [ ] Once opened, In the chat window ensure Agent mode is selected and then type:
 
