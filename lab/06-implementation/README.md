@@ -100,11 +100,12 @@ You will required to click on "Keep"/"Allow"/"Continue" in the chat window to as
 - [ ] Create or modify the .env file to update using your openai deployment details
 
     ![SpecKit](.\Images\3.png)
-    
+
 - [ ] Run the app: `.venv\Scripts\uvicorn app:app --log-level debug`.
 - [ ] Open <http://127.0.0.1:8000> in a browser, enter a friendly intro and a city, then submit; confirm streamed content appears and ends with the disclaimer. Example - *I am Dennis from Austin, Texas, USA.*
 
     ![SpecKit](.\images\4.png)
+    
 
 ### Validations
 
