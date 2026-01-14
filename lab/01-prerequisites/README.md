@@ -199,6 +199,7 @@ This will create the virtual environment. Leave the terminal window active for s
   az ml online-deployment list `
     --resource-group "rg-aifoundry-demo" `
     --workspace-name "ai-project-demo"
+  ```
 
 ## Human-in-the-Loop Disclaimer
 
