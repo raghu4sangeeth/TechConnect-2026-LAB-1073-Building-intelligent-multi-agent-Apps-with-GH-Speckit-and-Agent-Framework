@@ -6,7 +6,7 @@ In GitHub Spec Kit, the implementation phase turns the plan and tasks into worki
 
 ## Implementation Contents
 
-- Source files updated or created during `/speckit.implement`.
+- Source files updated or created during **/speckit.implement**.
 - Guidance for agents, orchestrators, and FastAPI endpoints.
 - Streaming and aggregation patterns, including fallback behavior.
 - Run instructions, logging, and manual validation tips.
@@ -14,8 +14,8 @@ In GitHub Spec Kit, the implementation phase turns the plan and tasks into worki
 
 ## Step 1: Generate the Implementation with GitHub Copilot
 
-- [ ] In the VS Code, goto Copilot Chat panel (sidebar icon or `Ctrl+Shift+I`).
-- [ ] Paste the prompt template below (it also includes `/speckit.implement`).
+- [ ] In VS Code, goto the Copilot Chat panel. If not open, open it by clicking the sidebar icon or pressing Ctrl+Shift+I.
+- [ ] Paste the prompt template below (it also includes **/speckit.implement**).
 - [ ] Hit **Enter** in Github Copilot to generate the actual code for the application.
 
     ![SpecKit](./images/1.png)
@@ -70,7 +70,7 @@ In GitHub Spec Kit, the implementation phase turns the plan and tasks into worki
 - Avoid unused abstractions or premature optimizations; focus on clarity.
 ```
 
-You will be required to click on "Keep"/"Allow"/"Continue" in the chat window to as copilot works.
+You will need to click on "Keep," "Allow," or "Continue" in the chat window for copilot to work.
 
 ## Step 2: After Generating the Implementation
 
@@ -99,6 +99,10 @@ You will be required to click on "Keep"/"Allow"/"Continue" in the chat window to
 - [ ] Create or modify the .env file to update using your openai deployment details
 
     ![SpecKit](./images/3.png)
+
+- [ ] For EntraID authentication, we need to grant the logged-in user the Cognitive Services OpenAI User permission. Use the Azure portal and assign the permissions as shown below.
+
+    ![SpecKit](./images/5.png)
 
 - [ ] Run the app: `.venv\Scripts\uvicorn app:app --log-level debug`.
 - [ ] Open <http://127.0.0.1:8000> in a browser, enter a friendly intro and a city, then submit; confirm streamed content appears and ends with the disclaimer. Example - *I am Dennis from Austin, Texas, USA.*

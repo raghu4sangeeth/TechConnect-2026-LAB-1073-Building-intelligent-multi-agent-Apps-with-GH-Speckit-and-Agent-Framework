@@ -13,9 +13,9 @@ In GitHub Spec Kit, the `/speckit.tasks` phase turns the plan into ordered, test
 
 ## Step 1: Generate Tasks with GitHub Copilot
 
-- [ ] In the VS Code - Goto the Copilot Chat panel (sidebar icon or `Ctrl+Shift+I`).
-- [ ] Paste the prompt template below (it also includes `/speckit.tasks`).
-- [ ] Hit **Enter** in Github Copilot to draft `tasks.md`.
+- [ ] In VS Code, goto the Copilot Chat panel. If not open, open it by clicking the sidebar icon or pressing Ctrl+Shift+I.
+- [ ] Paste the prompt template below (it also includes **/speckit.tasks**).
+- [ ] Hit **Enter** in Github Copilot to draft **tasks.md**.
 
     ![SpecKit](./images/1.png)
 
@@ -56,7 +56,7 @@ In GitHub Spec Kit, the `/speckit.tasks` phase turns the plan into ordered, test
 - Summarize how to deliver MVP (Phases 1–3), deepen functionality (Phases 4–5), and polish (Phase 6).
 ```
 
-You will required to click on "Keep"/"Allow"/"Continue" in the chat window to as copilot works.
+You will need to click on "Keep," "Allow," or "Continue" in the chat window for copilot to work.
 
 ## Step 2: After Generating Tasks
 
@@ -86,36 +86,36 @@ This module is now complete. Proceed to [06-implementation](../06-implementation
 
 ### Phase 1 — Setup
 
-- [ ] T001 Create project scaffold, virtual environment, and base FastAPI entrypoint.
-- [ ] T002 Add `.env.example` with Azure OpenAI variables and document disclaimer constant.
+- T001 Create project scaffold, virtual environment, and base FastAPI entrypoint.
+- T002 Add `.env.example` with Azure OpenAI variables and document disclaimer constant.
 
 ### Phase 2 — Foundational
 
-- [ ] T005 Build validators to confirm one-sentence intro and city detection.
-- [ ] T008 Prepare ConcurrentBuilder workflow and streaming pipeline with placeholders.
+- T005 Build validators to confirm one-sentence intro and city detection.
+- T008 Prepare ConcurrentBuilder workflow and streaming pipeline with placeholders.
 
 ### Phase 3 — User Story 1 (Collect Intro + City)
 
-- [ ] T011 Implement HTML form and disclaimer banner in `templates/index.html`.
-- [ ] T013 Integrate validators into POST handler and return friendly errors for invalid input.
-- [ ] T015 Add unit tests for sentence + city validation.
+- T011 Implement HTML form and disclaimer banner in `templates/index.html`.
+- T013 Integrate validators into POST handler and return friendly errors for invalid input.
+- T015 Add unit tests for sentence + city validation.
 
 ### Phase 4 — User Story 2 (Stream Agent Updates)
 
-- [ ] T018 Implement WeatherAgent prompt using Azure OpenAI only.
-- [ ] T021 Wire SSE streaming loop so both agents surface updates in real time.
-- [ ] T022 Handle polite waiting notes when one agent lags.
+- T018 Implement WeatherAgent prompt using Azure OpenAI only.
+- T021 Wire SSE streaming loop so both agents surface updates in real time.
+- T022 Handle polite waiting notes when one agent lags.
 
 ### Phase 5 — User Story 3 (Aggregate Final Tip)
 
-- [ ] T026 Combine agent outputs, cap to ~60 words, and append disclaimer.
-- [ ] T027 Insert degraded-agent note when any agent fails.
-- [ ] T024 Add contract test for final aggregated message.
+- T026 Combine agent outputs, cap to ~60 words, and append disclaimer.
+- T027 Insert degraded-agent note when any agent fails.
+- T024 Add contract test for final aggregated message.
 
 ### Phase 6 — Polish
 
-- [ ] T030 Refresh README with setup steps and streaming demo notes.
-- [ ] T033 Run manual check with real credentials to verify no static data usage.
+- T030 Refresh README with setup steps and streaming demo notes.
+- T033 Run manual check with real credentials to verify no static data usage.
 
 ### Dependencies & Parallelism
 
