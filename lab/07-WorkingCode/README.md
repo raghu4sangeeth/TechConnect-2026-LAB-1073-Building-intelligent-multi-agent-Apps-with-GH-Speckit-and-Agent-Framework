@@ -34,7 +34,7 @@ Copy `.env` and fill in your values:
 cp .env .env.local  # or edit .env directly
 ```
 
-```
+```bash
 AZURE_OPENAI_ENDPOINT=https://YOUR-RESOURCE-NAME.openai.azure.com/
 AZURE_OPENAI_DEPLOYMENT=YOUR_CHAT_DEPLOYMENT_NAME
 AZURE_OPENAI_API_VERSION=2024-05-01-preview
@@ -54,7 +54,7 @@ az login
 uvicorn app:app --reload
 ```
 
-Open http://127.0.0.1:8000 and submit the form. Progress appears in the timeline; the final paragraph includes "Information is approximate—verify locally before planning."
+Open <http://127.0.0.1:8000> and submit the form. Progress appears in the timeline; the final paragraph includes "Information is approximate—verify locally before planning."
 
 ## Testing
 

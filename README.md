@@ -10,6 +10,7 @@ We will leverage **GitHub Spec-Kit** for specification-driven development and **
 A **fully functional multi-agent customer service system** that intelligently handles customer inquiries across billing, orders, and support—deployed to Azure with enterprise-grade security and observability.
 
 Imagine AI agents that don't just answer questions—they:
+
 - ✨ **Understand context** and customer history
 - 🎯 **Route intelligently** to the right specialist agent
 - ⚡ **Act autonomously** by processing returns, checking status, and escalating when needed
@@ -21,28 +22,36 @@ Imagine AI agents that don't just answer questions—they:
 ## 🎓 Five Modules, One Epic Skill
 
 ### [Module 1: Foundations](./lab/modules/MODULE_1_FOUNDATIONS.md) 🏗️
-**Master the fundamentals of agentic AI**
+
+#### Master the fundamentals of agentic AI
+
 - Understand agents, tools, and orchestration
 - Learn specification-driven development (SDD)
 - Initialize your spec-kit project
 - *Duration: 10 minutes*
 
 ### [Module 2: Specification](./lab/modules/MODULE_2_SPECIFICATION.md) 📋
-**Turn vague ideas into executable specifications**
+
+#### Turn vague ideas into executable specifications
+
 - Write clear, measurable requirements for AI agents
 - Craft user stories that bridge business needs and technical implementation
 - Define acceptance criteria that drive quality
 - *Duration: 20 minutes*
 
 ### [Module 3: Planning](./lab/modules/MODULE_3_PLANNING.md) 🗓️
-**Design your multi-agent architecture**
+
+#### Design your multi-agent architecture
+
 - Learn Microsoft Agent Framework fundamentals
 - Design agent workflows and tool orchestration
 - Create comprehensive technical plans
 - *Duration: 20 minutes*
 
 ### [Module 4: Implementation](./lab/modules/MODULE_4_IMPLEMENTATION.md) 💻
-**Generate full-stack code from your specification**
+
+#### Generate full-stack code from your specification
+
 - Implement agents with tool definitions and business logic
 - Build FastAPI backend with Agent Framework
 - Create a React chat interface
@@ -50,7 +59,9 @@ Imagine AI agents that don't just answer questions—they:
 - *Duration: 20 minutes*
 
 ### [Module 5: Deployment](./lab/modules/MODULE_5_DEPLOYMENT.md) ☁️
-**Ship to Azure with confidence**
+
+#### Ship to Azure with confidence
+
 - Deploy infrastructure using Bicep IaC
 - Configure Foundry agents for production
 - Set up CI/CD pipelines
@@ -95,7 +106,7 @@ By the end of this lab, you will:
 
 ## 📖 Lab Structure
 
-```
+```bash
 lab/
 ├── INTRODUCTION.md                  ← Overview & architecture
 └── modules/

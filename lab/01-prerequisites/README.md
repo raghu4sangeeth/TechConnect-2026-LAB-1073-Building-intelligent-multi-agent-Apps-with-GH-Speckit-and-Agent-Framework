@@ -37,7 +37,7 @@ Establish the tools and workspace needed for the Hello Weather lab before drafti
   ![ResourcePage](./images/8.png)
 
 - [ ] Open a browser
-- [ ] Login at **<https://github.com/skillable-events>** with Azure Portal user credentials from the resource page (see above picture).
+- [ ] Login at `https://github.com/skillable-events` with Azure Portal user credentials from the resource page (see above picture).
 - [ ] Keep the logged-in browser tab open to keep your Github session active.
 - [ ] Open Visual Studio Code.
 - [ ] Use Github login option in VS Code to sign in if not signed in already.
@@ -52,7 +52,7 @@ Establish the tools and workspace needed for the Hello Weather lab before drafti
 
   ![Git](./images/9.png)
 
-- [ ] You should be authenticated succesfully. Follow the browser prompts to complete authentication.
+- [ ] You should be authenticated successfully. Follow the browser prompts to complete authentication.
 
 ## Step 2 — Prepare VS Code
 
@@ -71,6 +71,7 @@ Establish the tools and workspace needed for the Hello Weather lab before drafti
   The output would be **similar** to the below:
 
     ![Output](./images/3.png)
+
 - [ ] Login to Azure using the AZ command in terminal
 
   ```powershell
@@ -128,7 +129,7 @@ This will create the virtual environment. Leave the terminal window active for s
 
   Select/type **Y** for the warning on overwriting existing files
 
-- [ ] In the "Choose your AI Assitant" prompt, select copilot (Github Copilot).
+- [ ] In the "Choose your AI Assistant" prompt, select copilot (Github Copilot).
 
   ![Assistant](./images/4.png)
 
