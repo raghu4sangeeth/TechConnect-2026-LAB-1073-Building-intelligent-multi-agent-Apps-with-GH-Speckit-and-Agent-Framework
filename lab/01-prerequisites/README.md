@@ -70,7 +70,7 @@ Establish the tools and workspace needed for the Hello Weather lab before drafti
 
   The output would be **similar** to the below:
 
-    ![Output](./images/3.png)
+  ![scrshot](./images/3.png)
 
 - [ ] Login to Azure using the AZ command in terminal
 
