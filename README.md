@@ -21,7 +21,7 @@ Imagine AI agents that don't just answer questions—they:
 
 ## 🎓 Five Modules, One Epic Skill
 
-### [Module 1: Foundations](appendix\modules\MODULE_1_FOUNDATIONS.md) 🏗️
+### [Module 1: Foundations](./appendix/modules/MODULE_1_FOUNDATIONS.md) 🏗️
 
 #### Master the fundamentals of agentic AI
 
@@ -30,7 +30,7 @@ Imagine AI agents that don't just answer questions—they:
 - Initialize your spec-kit project
 - *Duration: 10 minutes*
 
-### [Module 2: Specification](appendix\modules\MODULE_2_SPECIFICATION.md) 📋
+### [Module 2: Specification](./appendix/modules/MODULE_2_SPECIFICATION.md) 📋
 
 #### Turn vague ideas into executable specifications
 
@@ -39,7 +39,7 @@ Imagine AI agents that don't just answer questions—they:
 - Define acceptance criteria that drive quality
 - *Duration: 20 minutes*
 
-### [Module 3: Planning](appendix\modules\MODULE_3_PLANNING.md) 🗓️
+### [Module 3: Planning](./appendix/modules/MODULE_3_PLANNING.md) 🗓️
 
 #### Design your multi-agent architecture
 
@@ -48,7 +48,7 @@ Imagine AI agents that don't just answer questions—they:
 - Create comprehensive technical plans
 - *Duration: 20 minutes*
 
-### [Module 4: Implementation](appendix\modules\MODULE_4_IMPLEMENTATION.md) 💻
+### [Module 4: Implementation](./appendix/modules/MODULE_4_IMPLEMENTATION.md) 💻
 
 #### Generate full-stack code from your specification
 
@@ -58,7 +58,7 @@ Imagine AI agents that don't just answer questions—they:
 - Write comprehensive tests
 - *Duration: 20 minutes*
 
-### [Module 5: Deployment](appendix\modules\MODULE_5_DEPLOYMENT.md) ☁️
+### [Module 5: Deployment](./appendix/modules/MODULE_5_DEPLOYMENT.md) ☁️
 
 #### Ship to Azure with confidence
 
@@ -72,7 +72,7 @@ Imagine AI agents that don't just answer questions—they:
 
 ## 📚 How to Get Started
 
-1. **Start here**: Open [Module 1: Foundations](lab\01-prerequisites\README.md)
+1. **Start here**: Open [Module 1: Foundations](./lab/01-prerequisites/README.md)
 2. **Follow the path**: Work through modules 1→5 in sequence
 3. **Complete deliverables**: Each module has specific tasks and outputs
 4. **Deploy and celebrate**: By Module 5, you'll have a production AI system running on Azure
@@ -121,7 +121,7 @@ lab/
 
 ## 🚦 Ready?
 
-**[Start with Module 1: Foundations →](lab\01-prerequisites\README.md)**
+**[Start with Module 1: Foundations →](./lab/01-prerequisites/README.md)**
 
 Let's build the future of AI together! 🚀
 
