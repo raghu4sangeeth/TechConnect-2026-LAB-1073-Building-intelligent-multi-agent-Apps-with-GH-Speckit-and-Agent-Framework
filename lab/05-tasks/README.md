@@ -54,6 +54,7 @@ In GitHub Spec Kit, the `/speckit.tasks` phase turns the plan into ordered, test
 
 ## Implementation Strategy
 - Summarize how to deliver MVP (Phases 1–3), deepen functionality (Phases 4–5), and polish (Phase 6).
+- Provide instructions to keep the overall implementation simple as this is only used as a proof of concept.
 ```
 
 You will need to click on "Keep," "Allow," or "Continue" in the chat window for copilot to work.

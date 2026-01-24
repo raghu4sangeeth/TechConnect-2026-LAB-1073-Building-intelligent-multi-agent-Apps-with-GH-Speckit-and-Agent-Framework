@@ -30,7 +30,8 @@ In GitHub Spec Kit, the implementation phase turns the plan and tasks into worki
 - Produce beginner-friendly Python that loads env variables, initializes AzureOpenAIChatClient, and defines WeatherAgent and CityAgent without static data.
 - Build a Concurrent workflow with a custom aggregator.
 - Expose a FastAPI web UI that collects intro + city and streams the combined result.
-- Use Agent-Framework-Samples/07.Workflow/code_samples/python/03.python-agent-framework-workflow-ghmodel-concurrent.ipynb for inspiration.
+- Create all code assets in a single folder for readability and clarity.
+- Use https://github.com/microsoft/Agent-Framework-Samples/blob/main/07.Workflow/code_samples/python/03.python-agent-framework-workflow-ghmodel-concurrent.ipynb for inspiration.
 
 ## Files to Update
 - app.py — FastAPI routes, input validation, streaming response.
@@ -67,7 +68,7 @@ In GitHub Spec Kit, the implementation phase turns the plan and tasks into worki
 
 ## Style Notes
 - Keep functions short, explicit, and well commented for workshop participants.
-- Avoid unused abstractions or premature optimizations; focus on clarity.
+- Avoid unused abstractions or premature optimizations; focus on simpicity and clarity.
 ```
 
 You will need to click on "Keep," "Allow," or "Continue" in the chat window for copilot to work.

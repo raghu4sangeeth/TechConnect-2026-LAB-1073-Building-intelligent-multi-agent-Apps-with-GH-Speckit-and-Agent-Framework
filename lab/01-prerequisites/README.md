@@ -164,11 +164,11 @@ This will create the virtual environment. Leave the terminal window active for s
   
 ## Step 7 — Verify foundry resource and model in Azure
   
-- [ ] Verify automated deployment of foundry resources, see expected results below.  
+- [ ] Verify automated deployment of foundry resources, see expected results below.  You may have to change the resourcegroup name.
 
   ```powershell
   # List deployments in the resource group
-  az resource list --resource-group ResourceGroup1 --query "[].{name:name, type:type}" --output table
+  az resource list --resource-group LAB181RG --query "[].{name:name, type:type}" --output table
   ```
 
   ![alt text](./images/12.png)
