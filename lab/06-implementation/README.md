@@ -24,50 +24,54 @@ In GitHub Spec Kit, the implementation phase turns the plan and tasks into worki
 
 ```text
 /speckit.implement
-# Implement — HelloWeather Minimal Python Prototype
+# Implement — HelloWeather Web Application
 
 ## Goal
-- Produce beginner-friendly Python that loads env variables, initializes AzureOpenAIChatClient, and defines WeatherAgent and CityAgent without static data.
+- Produce simple Python code that loads env variables, initializes AzureOpenAIChatClient, and defines WeatherAgent and CityAgent without static data.
 - Build a Concurrent workflow with a custom aggregator.
-- Expose a FastAPI web UI that collects intro + city and streams the combined result.
+- Expose a FastAPI web UI that collects user introduction that should include city within and processes it using agents to stream the combined result.
 - Create all code assets in a single folder for readability and clarity.
-- Use https://github.com/microsoft/Agent-Framework-Samples/blob/main/07.Workflow/code_samples/python/03.python-agent-framework-workflow-ghmodel-concurrent.ipynb for inspiration.
-
+- Use the sample code provided below for inspiration to understand using Microsoft Agent Framework for concurrent agent instrumentation - https://github.com/microsoft/Agent-Framework-Samples/blob/main/07.Workflow/code_samples/python/03.python-agent-framework-workflow-ghmodel-concurrent.ipynb.
+ 
 ## Files to Update
 - app.py — FastAPI routes, input validation, streaming response.
 - agents.py — Azure client init, agent definitions, ConcurrentBuilder orchestration, aggregator helpers.
-- templates/index.html — simple form for intro + city plus streaming output area.
-- .env (or .env.example) and README.md — runtime configuration and quickstart notes.
-
+- index.html — simple form for user input plus streaming output area.
+- requirements.txt - All the required dependencies.
+- README.md — Instructions to run the web app and QuickStart notes.
+- .env — Consists of Environment Variables required for runtime configuration.
+ 
 ## Dependencies & Auth
-- Packages: agent-framework --pre, fastapi, uvicorn, jinja2, python-dotenv.
+- Packages: agent-framework --pre, fastapi, uvicorn, jinja2, python-dotenv. (all the packages should be documented in requirements.txt)
 - Default auth via AzureCliCredential with API key fallback.
 - Environment vars: AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_DEPLOYMENT, AZURE_OPENAI_API_VERSION, optional AZURE_OPENAI_API_KEY.
-
+ 
 ## Agent Instructions (System Prompts)
 - WeatherAgent: "Given a city name, return a 1-2 sentence approximate weather tip (likely conditions, comfort or packing guidance). Use only Azure OpenAI model knowledge. Do not use static data or external APIs. Friendly and concise."
 - CityAgent: "Given a city name, return one short guidance sentence (transit, neighborhood, timing, or safety). Use only Azure OpenAI model knowledge. No static data. Friendly and concise."
-
+ 
 ## Orchestration & Streaming
-- Use ConcurrentBuilder with both agents as participants and drive it through run_stream.
+- Use ConcurrentBuilder with both agents as participants and drive it through run_stream for streaming the orchestration.
 - Implement a custom aggregator that merges agent text into a compact paragraph (≤ ~60 words), deduplicates overlap, and appends "Information is approximate—verify locally before planning."
-
+ 
 ## Web Frontend
-- GET / renders index.html with inputs for intro and city plus disclaimer banner.
-- POST /predict validates inputs, launches the concurrent workflow, and streams status events and the final message (SSE or chunked response).
-
+- GET / renders index.html with input that includes user introduction with city and a disclaimer banner.
+- POST / predict validates inputs, launches the concurrent agent workflow, and streams status events and the final user response message (SSE or chunked response).
+ 
 ## Resilience & Observability
 - Add timeouts and a single retry per agent; if one fails, return the other agent’s output with a polite note.
-- Sanitize inputs, cap output length, avoid medical/legal advice.
-- Log per-agent latency, errors, and aggregation outcomes.
-
+- Sanitize inputs, cap output length, avoid medical/legal/political advice.
+- stream all events status events, per-agent latency, errors, warnings and aggregation outcomes.
+ 
 ## Run Instructions
+- Implement all the requested user stories without fail including replacing the placeholder code blocks.
 - Include inline comments explaining client initialization, agent creation, concurrency wiring, streaming loop, and aggregation.
-- Provide steps to run locally: `uvicorn app:app --reload`.
+- Provide steps to run locally: `uvicorn app:app --reload` and other important information required in the readme.md.
+- Implement unit tests to validate the User Input, client initialization, agent creation, concurrency wiring, streaming loop, and aggregation.
 - Mention any quick manual tests (valid intro + city, missing city, simulated agent failure).
-
+ 
 ## Style Notes
-- Keep functions short, explicit, and well commented for workshop participants.
+- Keep functions short, simple, explicit, and well commented for the users.
 - Avoid unused abstractions or premature optimizations; focus on simpicity and clarity.
 ```
 
@@ -95,13 +99,20 @@ You will need to click on "Keep," "Allow," or "Continue" in the chat window for 
 - [ ] (optional) Install dependencies: `pip install -r requirements.txt`.
 
 > [!CAUTION]
-> Please note that you may see occasionally compilation errors or execution errors as code is generated by AI. Read the [Guidance](#human-in-the-loop-disclaimer).
+> Please note that you may see occasionally compilation errors or execution errors as code is generated by AI. Read the [Guidance].(#human-in-the-loop-disclaimer).
 
-- [ ] Create or modify the .env file to update using your openai deployment details
+- [ ] Create or modify the .env file to update using your openai deployment details as needed.
 
     ![SpecKit](./images/3.png)
 
-- [ ] For EntraID authentication, we need to grant the logged-in user the Cognitive Services OpenAI User permission. Use the Azure portal and assign the permissions as shown below.
+- [ ] For EntraID authentication, we need to grant the logged-in user the **Cognitive Services OpenAI User** permission. Use the Azure portal and assign the permissions as shown below.
+  - [ ] In the Azure portal, search for **Foundry**.
+  - [ ] Select **Foundry**, and navigate to specific resource.
+  - [ ] Select Access control (IAM) on the left pane.
+  - [ ] Select Add, then select Add role assignment.
+  - [ ] On the Role tab on the next screen, select **Cognitive Services OpenAI User** role.
+  - [ ] On the Members tab, select the logged in user.
+  - [ ] On the Review + assign tab, select Review + assign to assign the role.
 
     ![SpecKit](./images/5.png)
 
