@@ -26,40 +26,45 @@ In GitHub Spec Kit, the plan turns the specification into a concrete roadmap. It
 
 ```text
 /speckit.plan
-# Implementation Plan — HelloWeather
+# Implementation Plan — HelloWeather Web Application
 
 ## Goals
-- Translate the specification into a workshop-friendly demo.
-- Highlight major workstreams for frontend, agents, and orchestration.
+- Translate the specification into a user friendly demonstration.
+- Highlight major workstreams for frontend, agents, and multi agent orchestration.
 
 ## Environment
 - Python 3.10 or later.
 - Packages: agent-framework --pre, fastapi, uvicorn, jinja2, python-dotenv.
 - Auth: Azure CLI preferred with API key fallback.
-- Env vars: AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_DEPLOYMENT, AZURE_OPENAI_API_VERSION, optional AZURE_OPENAI_API_KEY.
+- Environment variables: AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_DEPLOYMENT, AZURE_OPENAI_API_VERSION, optional AZURE_OPENAI_API_KEY.
 
 ## Project Layout
+- Create all code assets in a single folder for readability and clarity.
 - app.py — FastAPI endpoints and streaming hook.
-- agents.py — WeatherAgent, CityAgent, and orchestrator wiring.
-- templates/index.html — form inputs and live status area.
-- README.md, .env.example.
+- agents.py — WeatherAgent, CityAgent, and orchestrator wiring with concurrency.
+- index.html — form inputs and live status area.
+- README.md — Instructions to run the web app.
+- .env — Consists of Environment Variables specified above.
+- requirements.txt — Dependent packages that needs to be installed before running the webapp.
 
 ## Workstreams
 - Setup & scaffolding.
+- User input form creation 
 - Agent prompts and concurrency wiring.
 - Streaming experience and final aggregation polish.
 - Validation, logging, and lightweight tests.
 
 ## Milestones
 - P1: Environment ready and skeleton runs locally.
-- P2: Agents stream updates concurrently with placeholder content.
+- P2: Agents stream updates concurrently with user input content.
 - P3: Aggregator merges results, adds disclaimer, and handles failures politely.
-- P4: Final polish, docs, and demo checklist.
+- P4: Final polish, tests, building docs, and checklists.
 
 ## Risks & Mitigations
 - Agent errors → add retry plus fallback messaging.
 - Streaming dropout → surface reconnect or retry guidance.
 - Validation gaps → enforce intro + city requirement with friendly errors.
+- Execution Errors → rinse and repeat testing till the web app successfully runs.
 
 ## Validation
 - Run `uvicorn app:app --reload` locally.

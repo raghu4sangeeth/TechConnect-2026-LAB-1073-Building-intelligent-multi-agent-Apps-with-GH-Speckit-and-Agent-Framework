@@ -25,36 +25,40 @@ In GitHub Spec Kit, the specification captures the user journeys and functional 
 
 ```text
 /speckit.specify
-# Functional Specification — HelloWeather
-
+# Functional Specification — HelloWeather Web Application
+ 
 ## Overview
-A minimal web app (FastAPI + HTML form) that asks for a one-sentence self-introduction including a city. On submit, a coordinator triggers concurrent runs of WeatherAgent and CityAgent using Microsoft Agent Framework. The app streams agent status and returns a single combined tip (weather + city guidance) with a brief disclaimer.
-
+We will be building a minimal web app using FastAPI, HTML Form and Microsoft Agent Framework. User submits one‑sentence self‑introduction in a html form. City is derived from that sentence on submit. No separate city input is required. Agent Coordinator triggers WeatherAgent and CityAgent using Microsoft Agent Framework. Coordinator streams agent status and returns a single ~60‑word weather guidance + city touring tips with a brief disclaimer on the user interface.
+ 
 ## Key Scenarios
-
+- Validate user input: exactly one sentence that should contain a city. 
+- If the sentence doesn’t reveal a city, respond directly to the user’s statement with a friendly prompt and request to provide a city.
+- Web interface shows real time progress and streaming updates.
+- Return final combined tip with mandatory disclaimer.
+ 
 ## User Input Rules
-- Simple web interface, showing progress at every stage of the user interaction.
+- Simple web interface with one input box and a submit button, showing progress at every stage of the user interaction.
 - Validate the self introduction as exactly one sentence containing a city.
-- Reject submissions that omit the city or exceed one sentence with actionable error messaging.
-
+- Reject submissions politely that omit the city or exceed one sentence with actionable error messaging.
+ 
 ## Agent Orchestration
 - Trigger WeatherAgent and CityAgent concurrently via the Microsoft Agent Framework coordinator.
 - Apply timeouts/retries and surface a polite note if one agent fails while still returning the other’s insight.
-
+ 
 ## Streaming & Aggregation
-- Stream intermediate agent status to the UI in real time.
+- Stream intermediate agent status to the user interface in real time.
 - Aggregate updates into a ≤ ~60-word final tip that merges weather and city guidance.
-
+ 
 ## Constraints
-- No static data or local tables; Azure OpenAI only.
+- No static data or local tables; Use Azure OpenAI calls only.
 - Friendly, concise tone with the mandatory disclaimer in the final response.
-- Must run locally with `uvicorn` while emitting clear logs for demos.
-
+- Must run locally with `uvicorn` while emitting clear logs for demonstration.
+ 
 ## Success Criteria
 - Verified concurrent execution, streaming, and aggregation in telemetry or logs.
 - Consistent tone, prompt disclaimer, and adherence to the ≤ ~60-word limit.
-- Demonstrates Spec Kit + Agent Framework best practices for “hello world” agent prototypes.
-- Workshop facilitators Step 2: demonstrate fan-out/fan-in orchestration and streaming without pre-seeded data.
+- Demonstrates Spec Kit + Agent Framework best practices for multi agent orchestration prototypes.
+- Able to demonstrate fan-out/fan-in orchestration and streaming without pre-seeded data.
 ```
 
 You will need to click on "Keep," "Allow," or "Continue" in the chat window for copilot to work.

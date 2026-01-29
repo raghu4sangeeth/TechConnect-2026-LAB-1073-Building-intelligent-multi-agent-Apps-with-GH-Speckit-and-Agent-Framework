@@ -88,6 +88,7 @@ Establish the tools and workspace needed for the Hello Weather lab before drafti
 - [ ] Create a folder under C:\Lab (eg., hello-weather-agent) by using the below command.
 
   ```bash
+  cd c:\lab
   mkdir hello-weather-agent
   cd hello-weather-agent
   ```
@@ -127,7 +128,7 @@ This will create the virtual environment. Leave the terminal window active for s
   uvx --from git+https://github.com/github/spec-kit.git specify init --here
   ```
 
-  Select/type **Y** for the warning on overwriting existing files
+- [ ] If prompted, select or enter **Y** to acknowledge the warning about overwriting existing files.
 
 - [ ] In the "Choose your AI Assistant" prompt, select copilot (Github Copilot).
 

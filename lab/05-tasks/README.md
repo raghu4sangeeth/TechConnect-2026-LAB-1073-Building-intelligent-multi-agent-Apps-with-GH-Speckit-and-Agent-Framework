@@ -23,38 +23,41 @@ In GitHub Spec Kit, the `/speckit.tasks` phase turns the plan into ordered, test
 
 ```text
 /speckit.tasks
-# Tasks — HelloWeather Web App
-
+# Tasks — HelloWeather Web Application
+ 
 ## Context
-- Use the sample code as needed to work with Microsoft Agent Framework for concurrent agent instrumentation - https://github.com/microsoft/Agent-Framework-Samples/blob/main/07.Workflow/code_samples/python/03.python-agent-framework-workflow-ghmodel-concurrent.ipynb
-
+- Use the sample code provided below for inspiration to understand using Microsoft Agent Framework for concurrent agent instrumentation - https://github.com/microsoft/Agent-Framework-Samples/blob/main/07.Workflow/code_samples/python/03.python-agent-framework-workflow-ghmodel-concurrent.ipynb
+- Translated plan into an actionable tasks.
+ 
 ## Phase 1 — Setup (Shared Infrastructure)
-- Tasks cover project scaffolding, dependency installation, .env example, and tooling setup.
-- Author strict **system instructions** for brevity, safety, disclaimer
-
+- Tasks cover project scaffolding, dependency installation through requirements.txt, .env example, and tooling setup.
+- Author strict **system instructions** for brevity, safety, disclaimer for agent orchestration.
+ 
 ## Phase 2 — Foundational (Blocking Prerequisites)
-- Tasks create models, validators, telemetry helpers, orchestration skeleton, and placeholder FastAPI routes.
-
+- Tasks create user interfaces, models, validators, telemetry helpers, agent orchestration skeleton, and FastAPI routes.
+ 
 ## Phase 3 — User Story 1 (Collect Friendly Inputs, Priority P1)
 - Tasks implement HTML form, GET/POST handlers, disclaimer banner, initial SSE event, and validator unit tests.
-
+ 
 ## Phase 4 — User Story 2 (Watch Agents Stream, Priority P2)
 - Tasks build MockLLM fixtures, integration tests, WeatherAgent and CityAgent prompts, ConcurrentBuilder wiring, SSE streaming loop, heartbeat handling, and telemetry logging.
-
+ 
 ## Phase 5 — User Story 3 (Receive Combined Tip, Priority P3)
 - Tasks add contract tests, final aggregation logic, degraded-note handling, final SSE event, and word-count guard.
-
+ 
 ## Phase 6 — Polish & Cross-Cutting
-- Tasks document setup/demo steps, add CLI tips, extend telemetry tests, and perform manual validation with live credentials.
-
+- Tasks document setup/demo steps, add CLI tips, extend telemetry tests, and perform manual validation with live data.
+- Tasks to ensure all placeholder snippets implemented including exception handling. 
+ 
 ## Dependencies & Parallelism
 - List each phase in order with checkpoints.
 - Mark tasks that can run in parallel with [P].
 - Include user story dependency graph and examples of safe parallel execution.
-
+ 
 ## Implementation Strategy
 - Summarize how to deliver MVP (Phases 1–3), deepen functionality (Phases 4–5), and polish (Phase 6).
-- Provide instructions to keep the overall implementation simple as this is only used as a proof of concept.
+- Provide instructions to keep the overall implementation simple as this is only used to demonstrate the technical feasibility.
+- Keep the technical stack around Microsoft Agent Framework, fastapi, uvicorn, python.
 ```
 
 You will need to click on "Keep," "Allow," or "Continue" in the chat window for copilot to work.

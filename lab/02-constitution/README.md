@@ -48,6 +48,7 @@ In GitHub Spec Kit, the constitution defines the guardrails that every agent mus
 - CityAgent: one sentence of city guidance (transit/safety/local insight) using Azure OpenAI only.
 
 ## Success Criteria
+- simple, clear, beginner‑friendly code without advanced patterns or complex abstractions.
 - Parallel execution with visible streaming.
 - Final response under ~60 words.
 - Graceful degradation if one agent fails.
@@ -55,6 +56,7 @@ In GitHub Spec Kit, the constitution defines the guardrails that every agent mus
 ## Non-Goals
 - Real-time meteorological accuracy or external API integration.
 - Multi-paragraph outputs.
+- Complex code constructs.
 ```
 
 You will need to click on "Keep," "Allow," or "Continue" in the chat window for copilot to work.
