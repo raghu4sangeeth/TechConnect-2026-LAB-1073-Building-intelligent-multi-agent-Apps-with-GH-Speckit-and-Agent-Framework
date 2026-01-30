@@ -13,7 +13,7 @@ In GitHub Spec Kit, the `/speckit.tasks` phase turns the plan into ordered, test
 
 ## Step 1: Generate Tasks with GitHub Copilot
 
-- [ ] In VS Code, goto the Copilot Chat panel. If not open, open it by clicking the sidebar icon or pressing Ctrl+Shift+I.
+- [ ] In VS Code, goto the Copilot Chat panel. If not open, open it by selecting the sidebar icon or pressing Ctrl+Shift+I.
 - [ ] Paste the prompt template below (it also includes **/speckit.tasks**).
 - [ ] Hit **Enter** in Github Copilot to draft **tasks.md**.
 
@@ -60,7 +60,7 @@ In GitHub Spec Kit, the `/speckit.tasks` phase turns the plan into ordered, test
 - Keep the technical stack around Microsoft Agent Framework, fastapi, uvicorn, python.
 ```
 
-You will need to click on "Keep," "Allow," or "Continue" in the chat window for copilot to work.
+You will need to select "Keep," "Allow," or "Continue" in the chat window for copilot to work.
 
 ## Step 2: After Generating Tasks
 

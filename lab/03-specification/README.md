@@ -15,7 +15,7 @@ In GitHub Spec Kit, the specification captures the user journeys and functional 
 ## Step 1: Generate the Specification with GitHub Copilot
 
 - [ ] In the VS Code workspace you opened during the constitution phase, confirm GitHub Copilot and GitHub Copilot Chat remain enabled.
-- [ ] In VS Code, goto the Copilot Chat panel. If not open, open it by clicking the sidebar icon or pressing Ctrl+Shift+I.
+- [ ] In VS Code, goto the Copilot Chat panel. If not open, open it by selecting the sidebar icon or pressing Ctrl+Shift+I.
 - [ ] Paste the template prompt below (it includes **/speckit.specify**) and adapt the TODO placeholders to match your project.
 - [ ] Hit **Enter** in Github Copilot to draft **spec.md**.
 
@@ -61,7 +61,7 @@ We will be building a minimal web app using FastAPI, HTML Form and Microsoft Age
 - Able to demonstrate fan-out/fan-in orchestration and streaming without pre-seeded data.
 ```
 
-You will need to click on "Keep," "Allow," or "Continue" in the chat window for copilot to work.
+You will need to select "Keep," "Allow," or "Continue" in the chat window for copilot to work.
 
 ## Step 2: After Generating the Specification
 

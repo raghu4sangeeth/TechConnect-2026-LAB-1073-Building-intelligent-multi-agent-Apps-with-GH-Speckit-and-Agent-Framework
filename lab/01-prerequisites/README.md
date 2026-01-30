@@ -93,7 +93,7 @@ Establish the tools and workspace needed for the Hello Weather lab before drafti
   cd hello-weather-agent
   ```
 
-- [ ] Launch **Visual Studio Code** from this folder using the below command and click the checkbox and "Yes, I trust the authors"
+- [ ] Launch **Visual Studio Code** from this folder using the below command and select the checkbox and "Yes, I trust the authors"
 
   ```bash
   code . --reuse-window

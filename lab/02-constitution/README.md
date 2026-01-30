@@ -18,7 +18,7 @@ In GitHub Spec Kit, the constitution defines the guardrails that every agent mus
 
     ![Speckit](./images/1.png)
 
-- [ ] If the Copilot Chat panel isn't already open, please open it by clicking the sidebar icon or using the shortcut `Ctrl+Shift+I`.
+- [ ] If the Copilot Chat panel isn't already open, please open it by selecting the sidebar icon or using the shortcut `Ctrl+Shift+I`.
 
 - [ ] In the chat input, paste the placeholder prompt below (it includes the **/speckit.constitution** command) and edit it with project specifics.
 
@@ -59,7 +59,7 @@ In GitHub Spec Kit, the constitution defines the guardrails that every agent mus
 - Complex code constructs.
 ```
 
-You will need to click on "Keep," "Allow," or "Continue" in the chat window for copilot to work.
+You will need to select "Keep," "Allow," or "Continue" in the chat window for copilot to work.
 
 ## Step 2: After Generating the Constitution
 
